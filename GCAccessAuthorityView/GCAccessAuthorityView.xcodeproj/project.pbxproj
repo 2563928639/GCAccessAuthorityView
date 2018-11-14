@@ -13,6 +13,7 @@
 		1893FB91219490A4002FB251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1893FB90219490A4002FB251 /* Assets.xcassets */; };
 		1893FB94219490A4002FB251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1893FB92219490A4002FB251 /* LaunchScreen.storyboard */; };
 		1893FB97219490A4002FB251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893FB96219490A4002FB251 /* main.m */; };
+		1893FBA021949108002FB251 /* GCAccessAuthorityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893FB9F21949108002FB251 /* GCAccessAuthorityView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1893FB93219490A4002FB251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1893FB95219490A4002FB251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1893FB96219490A4002FB251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1893FB9E21949108002FB251 /* GCAccessAuthorityView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCAccessAuthorityView.h; sourceTree = "<group>"; };
+		1893FB9F21949108002FB251 /* GCAccessAuthorityView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCAccessAuthorityView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		1893FB86219490A1002FB251 /* GCAccessAuthorityView */ = {
 			isa = PBXGroup;
 			children = (
+				1893FB9D219490FD002FB251 /* GCAccessAuthorityView */,
 				1893FB87219490A1002FB251 /* AppDelegate.h */,
 				1893FB88219490A1002FB251 /* AppDelegate.m */,
 				1893FB8A219490A1002FB251 /* ViewController.h */,
@@ -67,6 +71,15 @@
 				1893FB92219490A4002FB251 /* LaunchScreen.storyboard */,
 				1893FB95219490A4002FB251 /* Info.plist */,
 				1893FB96219490A4002FB251 /* main.m */,
+			);
+			path = GCAccessAuthorityView;
+			sourceTree = "<group>";
+		};
+		1893FB9D219490FD002FB251 /* GCAccessAuthorityView */ = {
+			isa = PBXGroup;
+			children = (
+				1893FB9E21949108002FB251 /* GCAccessAuthorityView.h */,
+				1893FB9F21949108002FB251 /* GCAccessAuthorityView.m */,
 			);
 			path = GCAccessAuthorityView;
 			sourceTree = "<group>";
@@ -143,6 +156,7 @@
 			files = (
 				1893FB8C219490A1002FB251 /* ViewController.m in Sources */,
 				1893FB97219490A4002FB251 /* main.m in Sources */,
+				1893FBA021949108002FB251 /* GCAccessAuthorityView.m in Sources */,
 				1893FB89219490A1002FB251 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,8 +298,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PR8NSTC254;
+				DEVELOPMENT_TEAM = EQWQFG7ZLN;
 				INFOPLIST_FILE = GCAccessAuthorityView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,8 +316,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PR8NSTC254;
+				DEVELOPMENT_TEAM = EQWQFG7ZLN;
 				INFOPLIST_FILE = GCAccessAuthorityView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
