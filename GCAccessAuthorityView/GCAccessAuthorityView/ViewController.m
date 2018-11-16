@@ -26,10 +26,10 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    GCAccessAuthorityView *accessAuthrityView = [[GCAccessAuthorityView alloc] initWithAccessAuthorityWithType:GCAccessAuthorityTypeVideoAudio];
+    GCAccessAuthorityView *accessAuthrityView = [[GCAccessAuthorityView alloc] initWithAccessAuthorityWithType:GCAccessAuthorityTypePhoto];
     [accessAuthrityView gc_checkAccessAuthorityWithCompletionHandler:^(BOOL isEnable) {
         if(!isEnable){
-            [[UIApplication sharedApplication].keyWindow addSubview:accessAuthrityView];
+//            [[UIApplication sharedApplication].keyWindow addSubview:accessAuthrityView];
         }
     }];
     accessAuthrityView.gc_GCAccessAuthorityViewCloseClick = ^{
