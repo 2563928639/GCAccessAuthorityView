@@ -21,20 +21,19 @@
     
     self.view.backgroundColor = [UIColor yellowColor];
     
-    
-}
-
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    GCAccessAuthorityView *accessAuthrityView = [[GCAccessAuthorityView alloc] initWithAccessAuthorityWithType:GCAccessAuthorityTypePhoto];
+    GCAccessAuthorityView *accessAuthrityView = [[GCAccessAuthorityView alloc] initWithAccessAuthorityWithType:GCAccessAuthorityTypeContacts];
     [accessAuthrityView gc_checkAccessAuthorityWithCompletionHandler:^(BOOL isEnable) {
         if(!isEnable){
-//            [[UIApplication sharedApplication].keyWindow addSubview:accessAuthrityView];
+            //            [[UIApplication sharedApplication].keyWindow addSubview:accessAuthrityView];
+            [self.view addSubview:accessAuthrityView];
         }
     }];
-    accessAuthrityView.gc_GCAccessAuthorityViewCloseClick = ^{
-        
-    };
+    
+    
+        accessAuthrityView.gc_GCAccessAuthorityViewCloseClick = ^{
+            
+        };
+
 }
 
 
