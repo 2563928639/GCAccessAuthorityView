@@ -30,9 +30,9 @@
     }];
     
     
-        accessAuthrityView.gc_GCAccessAuthorityViewCloseClick = ^{
-            
-        };
+    accessAuthrityView.gc_GCAccessAuthorityViewCloseClick = ^{
+        
+    };
 
 }
 
